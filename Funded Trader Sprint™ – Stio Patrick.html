@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)file:///Users/stio/Downloads/index%20(2).html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Funded Trader Sprint™ – Stio Patrick</title>
+
+<link rel="icon" href="file:///Users/stio/Downloads/favicon.ico" sizes="48x48">
+<link rel="icon" href="file:///Users/stio/Downloads/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="file:///Users/stio/Downloads/apple-touch-icon.png">
+
+<meta property="og:title" content="Funded Trader Sprint™ – Stio Patrick">
+<meta property="og:description" content="Pass your first $100K prop firm challenge in 30 days with the Funded Trader Sprint System™.">
+<meta property="og:image" content="https://yourdomain.com/social-image.jpg">
+<meta property="og:url" content="https://yourdomain.com">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Funded Trader Sprint™ – Stio Patrick">
+<meta name="twitter:description" content="Pass your first $100K prop firm challenge in 30 days with the Funded Trader Sprint System™.">
+<meta name="twitter:image" content="https://yourdomain.com/social-image.jpg">
+
+<link href="./Funded Trader Sprint™ – Stio Patrick_files/css2" rel="stylesheet">
+<style>
+  :root {
+    --bg:           #0e0d0b;
+    --surface:      #161410;
+    --card:         #1e1b14;
+    --border:       #302c22;
+    --border-light: #3e3928;
+    --amber:        #FFCE85;
+    --amber-glow:   rgba(255,206,133,0.12);
+    --green:        #3ecf6e;
+    --green-text:   #3ecf6e;
+    --muted:        #786e58;
+    --text:         #f2ede0;
+    --text-dim:     #c4b89a;
+    --text-dimmer:  #786e58;
+    --toggle-bg:    #302c22;
+    --toggle-icon:  #c4b89a;
+  }
+
+  body.light {
+    --bg:           #faf7f0;
+    --surface:      #f2ece0;
+    --card:         #ebe4d4;
+    --border:       #d4c9b0;
+    --border-light: #bfb49a;
+    --amber:        #b08840;
+    --amber-glow:   rgba(176,136,64,0.09);
+    --green:        #166d34;
+    --green-text:   #166d34;
+    --muted:        #7a7060;
+    --text:         #18160f;
+    --text-dim:     #3e3830;
+    --text-dimmer:  #7a7060;
+    --toggle-bg:    #e0d8c8;
+    --toggle-icon:  #3e3830;
+  }
+
+  *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    line-height: 1.72;
+    -webkit-font-smoothing: antialiased;
+    transition: background 0.25s, color 0.25s;
+  }
+
+  body::after {
+    content: '';
+    position: fixed; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
+    pointer-events: none; z-index: 9999; mix-blend-mode: overlay;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 15px 32px;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border);
+    transition: background 0.25s, border-color 0.25s;
+  }
+
+  .nav-logo {
+    display: flex; align-items: center; gap: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px; font-weight: 700; letter-spacing: 3px;
+    text-transform: uppercase; color: var(--text);
+    transition: color 0.25s;
+  }
+  .nav-logo-icon { color: var(--amber); }
+
+  .nav-right { display: flex; align-items: center; gap: 10px; }
+
+  .theme-toggle {
+    width: 36px; height: 36px;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--toggle-bg);
+    border: 1px solid var(--border-light);
+    border-radius: 8px; cursor: pointer; flex-shrink: 0;
+    color: var(--toggle-icon);
+    transition: all 0.2s;
+  }
+  .theme-toggle:hover { border-color: var(--amber); color: var(--amber); }
+
+  .icon-moon { display: block; }
+  .icon-sun  { display: none; }
+  body.light .icon-moon { display: none; }
+  body.light .icon-sun  { display: block; }
+
+  .btn-nav {
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;
+    background: var(--amber); color: #0e0d0b;
+    border: none; border-radius: 6px;
+    padding: 8px 18px; cursor: pointer; transition: all 0.2s;
+  }
+  .btn-nav:hover { filter: brightness(1.08); transform: translateY(-1px); box-shadow: 0 0 18px var(--amber-glow), 0 0 6px color-mix(in srgb, var(--amber) 40%, transparent); }
+
+  .page { max-width: 660px; margin: 0 auto; padding: 0 24px; }
+
+  .eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--text-dimmer); margin-bottom: 12px; transition: color 0.25s;
+  }
+
+  .hero {
+    padding: 64px 0 52px;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.25s;
+  }
+
+  .hero-icon { width: 44px; height: 44px; margin-bottom: 24px; color: var(--amber); transition: color 0.25s; }
+
+  .hero h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(28px, 5vw, 40px); font-weight: 700;
+    line-height: 1.13; letter-spacing: -0.5px;
+    color: var(--text); margin-bottom: 18px; max-width: 560px;
+    transition: color 0.25s;
+  }
+  .hero h1 .accent { color: var(--amber); }
+
+  .hero-sub {
+    font-size: 15px; color: var(--text-dim);
+    max-width: 520px; margin-bottom: 14px; line-height: 1.75;
+    transition: color 0.25s;
+  }
+
+  .hero-bold {
+    font-size: 15px; font-weight: 600; color: var(--text);
+    max-width: 520px; margin-bottom: 30px; line-height: 1.75;
+    transition: color 0.25s;
+  }
+
+  .hero-microcopy {
+    font-size: 13px; color: var(--text-dimmer); margin-top: 12px;
+    transition: color 0.25s;
+  }
+
+  .btn-cta {
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;
+    background: var(--amber); color: #0e0d0b;
+    border: none; border-radius: 6px;
+    padding: 13px 26px; cursor: pointer; transition: all 0.2s;
+    display: inline-block;
+  }
+  .btn-cta:hover { filter: brightness(1.08); transform: translateY(-1px); box-shadow: 0 0 24px var(--amber-glow), 0 0 8px color-mix(in srgb, var(--amber) 45%, transparent); }
+
+  .pricing-section {
+    padding: 48px 0 40px;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.25s;
+  }
+
+  .price-display { display: flex; align-items: baseline; gap: 8px; margin-bottom: 6px; }
+
+  .price-main {
+    font-family: 'Lato', sans-serif;
+    font-size: 54px; font-weight: 700; letter-spacing: -1.5px;
+    color: var(--text); transition: color 0.25s;
+  }
+  .price-period { font-size: 14px; font-weight: 500; color: var(--text-dim); transition: color 0.25s; }
+  .price-note { font-size: 13px; color: var(--text-dim); margin-bottom: 12px; transition: color 0.25s; }
+  .price-desc { font-size: 14px; color: var(--text-dim); line-height: 1.75; margin-bottom: 28px; transition: color 0.25s; }
+  .price-microcopy { font-size: 12px; color: var(--text-dimmer); margin-top: 12px; transition: color 0.25s; }
+
+  .tier-list { display: flex; flex-direction: column; gap: 12px; margin: 24px 0; }
+  .tier-row  { display: flex; flex-direction: column; gap: 5px; }
+  .tier-label {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 12px; font-weight: 600; color: var(--text-dim);
+    transition: color 0.25s;
+  }
+  .tier-badge {
+    font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 2px 7px; border-radius: 3px;
+  }
+  .tier-badge.sold { background: var(--surface); color: var(--muted); border: 1px solid var(--border); transition: all 0.25s; }
+  .tier-badge.live {
+    background: var(--amber-glow); color: var(--amber);
+    border: 1px solid color-mix(in srgb, var(--amber) 30%, transparent);
+    transition: all 0.25s;
+  }
+  .tier-bar-track {
+    height: 9px; border-radius: 3px; overflow: hidden;
+    background: var(--surface); display: flex; gap: 2px;
+    border: 1px solid var(--border);
+    transition: background 0.25s, border-color 0.25s;
+  }
+  .seg { height: 100%; border-radius: 2px; flex-shrink: 0; transition: background 0.25s; }
+  .seg.on  { background: var(--green); }
+  .seg.off { background: var(--border); }
+
+  .testi-note { font-size: 12px; color: var(--text-dimmer); margin-bottom: 14px; transition: color 0.25s; }
+
+  .testimonial {
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 16px 18px;
+    border: 1px solid var(--border); border-radius: 8px;
+    background: var(--surface);
+    transition: background 0.25s, border-color 0.25s;
+  }
+
+  .testi-avatar {
+    width: 64px; height: 64px; border-radius: 50%;
+    background: var(--card); flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Lato', sans-serif; font-size: 15px; font-weight: 700;
+    color: var(--amber); border: 1px solid var(--border-light);
+    transition: background 0.25s;
+  }
+
+  .testi-text {
+    font-size: 15px; font-style: italic; font-weight: 400; color: var(--text-dim);
+    line-height: 1.65; margin-bottom: 5px; transition: color 0.25s;
+  }
+  .testi-handle { font-size: 12px; font-weight: 600; color: var(--muted); transition: color 0.25s; }
+
+  .benefits-section {
+    padding: 48px 0;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.25s;
+  }
+
+  .benefits-section h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(22px, 4vw, 30px); font-weight: 700;
+    line-height: 1.16; letter-spacing: -0.4px;
+    color: var(--text); margin-bottom: 6px;
+    transition: color 0.25s;
+  }
+
+  .benefits-intro {
+    font-size: 14px; color: var(--text-dim); line-height: 1.75; margin-bottom: 28px;
+    transition: color 0.25s;
+  }
+
+  .benefit-list { display: flex; flex-direction: column; gap: 24px; }
+
+  .benefit-item {
+    display: flex; gap: 16px; align-items: flex-start;
+  }
+
+  .benefit-icon-wrap {
+    width: 32px; height: 32px; border-radius: 50%;
+    border: 1px solid color-mix(in srgb, var(--amber) 35%, transparent);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.25s;
+  }
+  .benefit-icon-wrap svg {
+    width: 15px; height: 15px; color: var(--amber);
+    transition: color 0.25s;
+  }
+
+  .benefit-content { flex: 1; }
+
+  .benefit-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700; font-size: 16px;
+    color: var(--text); margin-bottom: 4px;
+    transition: color 0.25s;
+  }
+
+  .benefit-desc { font-size: 14px; color: var(--text-dim); line-height: 1.75; transition: color 0.25s; }
+  .benefit-deliverable {
+    font-size: 13px; color: var(--text-dimmer); margin-top: 6px; line-height: 1.65;
+    transition: color 0.25s;
+  }
+
+  .how-section {
+    padding: 56px 0;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.25s;
+  }
+
+  .how-section h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(22px, 4vw, 30px); font-weight: 700;
+    line-height: 1.16; letter-spacing: -0.4px;
+    color: var(--text); margin-bottom: 28px;
+    transition: color 0.25s;
+  }
+
+  .step-list { display: flex; flex-direction: column; gap: 24px; }
+
+  .step-item {
+    display: flex; gap: 16px; align-items: flex-start;
+  }
+
+  .step-num {
+    font-family: 'Lato', sans-serif;
+    font-size: 13px; font-weight: 700; color: var(--amber);
+    width: 32px; height: 32px; border-radius: 50%;
+    border: 1px solid color-mix(in srgb, var(--amber) 35%, transparent);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.25s;
+  }
+
+  .step-content { flex: 1; }
+
+  .step-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700; font-size: 16px;
+    color: var(--text); margin-bottom: 4px;
+    transition: color 0.25s;
+  }
+
+  .step-desc {
+    font-size: 14px; color: var(--text-dim); line-height: 1.75;
+    transition: color 0.25s;
+  }
+
+  .who-section {
+    padding: 56px 0;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.25s;
+  }
+
+  .who-section h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(22px, 4vw, 30px); font-weight: 700;
+    line-height: 1.13; letter-spacing: -0.5px;
+    color: var(--text); margin-bottom: 18px; transition: color 0.25s;
+  }
+
+  .who-section h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px; font-weight: 700;
+    color: var(--text); margin-bottom: 12px; margin-top: 28px;
+    transition: color 0.25s;
+  }
+
+  .who-section h3:first-of-type { margin-top: 0; }
+
+  .who-list {
+    list-style: none; display: flex; flex-direction: column; gap: 10px;
+  }
+  .who-list li {
+    display: flex; align-items: flex-start; gap: 10px;
+    font-size: 14px; font-weight: 500; color: var(--text-dim);
+    transition: color 0.25s;
+  }
+  .who-list.for-list li::before {
+    content: '\2713'; color: var(--green-text); font-weight: 700; font-size: 13px;
+    flex-shrink: 0; margin-top: 2px; transition: color 0.25s;
+  }
+  .who-list.not-list li::before {
+    content: '\2717'; color: var(--muted); font-weight: 700; font-size: 13px;
+    flex-shrink: 0; margin-top: 2px; transition: color 0.25s;
+  }
+
+  .outcomes-section {
+    padding: 56px 0;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.25s;
+  }
+
+  .outcomes-section h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(22px, 4vw, 30px); font-weight: 700;
+    line-height: 1.16; letter-spacing: -0.4px;
+    color: var(--text); margin-bottom: 6px;
+    transition: color 0.25s;
+  }
+
+  .outcomes-sub {
+    font-size: 14px; color: var(--text-dim); margin-bottom: 20px; transition: color 0.25s;
+  }
+
+  .outcomes-list {
+    list-style: none; display: flex; flex-direction: column; gap: 10px;
+  }
+  .outcomes-list li {
+    display: flex; align-items: flex-start; gap: 10px;
+    font-size: 14px; font-weight: 500; color: var(--text-dim);
+    transition: color 0.25s;
+  }
+  .outcomes-list li::before {
+    content: '\2192'; color: var(--amber); font-weight: 700; font-size: 13px;
+    flex-shrink: 0; margin-top: 2px; transition: color 0.25s;
+  }
+
+  .faq-section {
+    padding: 56px 0;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.25s;
+  }
+
+  .faq-section h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(22px, 4vw, 30px); font-weight: 700;
+    line-height: 1.16; letter-spacing: -0.4px;
+    color: var(--text); margin-bottom: 28px;
+    transition: color 0.25s;
+  }
+
+  .faq-item {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.25s;
+  }
+  .faq-item:first-of-type { border-top: 1px solid var(--border); }
+  .faq-item:last-child { border-bottom: none; }
+
+  .faq-q {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700; font-size: 15px;
+    color: var(--text); margin-bottom: 8px;
+    transition: color 0.25s;
+  }
+
+  .faq-a {
+    font-size: 14px; color: var(--text-dim); line-height: 1.75;
+    transition: color 0.25s;
+  }
+
+  .about-section { padding: 56px 0; border-bottom: 1px solid var(--border); transition: border-color 0.25s; }
+  .about-row { display: flex; gap: 18px; align-items: flex-start; margin-bottom: 20px; }
+  .about-avatar {
+    width: 62px; height: 62px; border-radius: 50%;
+    background: var(--card); flex-shrink: 0;
+    border: 1px solid var(--border-light);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 700;
+    color: var(--amber); transition: background 0.25s;
+  }
+  .about-name {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700; font-size: 20px; color: var(--text);
+    margin-bottom: 4px; transition: color 0.25s;
+  }
+  .about-handle { font-size: 12px; font-weight: 500; color: var(--muted); transition: color 0.25s; }
+  .about-body { font-size: 14px; color: var(--text-dim); line-height: 1.8; display: flex; flex-direction: column; gap: 14px; transition: color 0.25s; }
+
+  .final-cta-section {
+    padding: 56px 0;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.25s;
+  }
+
+  .final-cta-section h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(24px, 4vw, 34px); font-weight: 700;
+    line-height: 1.16; letter-spacing: -0.4px;
+    color: var(--text); margin-bottom: 12px;
+    transition: color 0.25s;
+  }
+
+  .final-cta-sub {
+    font-size: 15px; color: var(--text-dim); line-height: 1.75; margin-bottom: 24px;
+    transition: color 0.25s;
+  }
+
+  .scarcity-banner {
+    padding: 16px 24px;
+    background: color-mix(in srgb, #ff4444 8%, var(--bg));
+    border-bottom: 1px solid color-mix(in srgb, #ff4444 20%, var(--border));
+    display: flex; align-items: center; justify-content: center; gap: 16px;
+    transition: all 0.25s;
+  }
+
+  .scarcity-text {
+    font-size: 14px; font-weight: 600; color: var(--text);
+    transition: color 0.25s;
+  }
+
+  .scarcity-bar {
+    display: flex; gap: 3px; align-items: center;
+  }
+
+  .scarcity-seg {
+    width: 12px; height: 12px; border-radius: 2px;
+    transition: background 0.25s;
+  }
+
+  .scarcity-seg.taken { background: #ff4444; animation: pulse 1.5s ease-in-out infinite; }
+  .scarcity-seg.available { background: var(--green); }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  footer { padding: 24px 0; display: flex; align-items: center; justify-content: space-between; }
+  .footer-copy { font-size: 12px; font-weight: 500; color: var(--muted); transition: color 0.25s; }
+  .footer-link { font-size: 12px; font-weight: 600; color: var(--muted); transition: color 0.2s; }
+  .footer-link:hover { color: var(--amber); }
+
+  /* Bonus card styles */
+  .bonus-list { display: flex; flex-direction: column; gap: 12px; margin-top: 28px; }
+  .bonus-card {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 14px 18px;
+    border: 1px solid var(--border); border-radius: 8px;
+    background: var(--surface);
+    transition: background 0.25s, border-color 0.25s;
+  }
+  .bonus-title { font-size: 14px; font-weight: 600; color: var(--text); transition: color 0.25s; }
+  .bonus-value { font-size: 12px; font-weight: 700; color: var(--amber); white-space: nowrap; margin-left: 12px; transition: color 0.25s; }
+
+  /* Value total bar */
+  .value-bar {
+    margin-top: 20px; padding: 16px 20px;
+    border: 1px solid var(--border-light); border-radius: 6px;
+    background: var(--card);
+    display: flex; justify-content: space-between; align-items: center;
+    transition: all 0.25s;
+  }
+  .value-bar-label { font-size: 13px; font-weight: 600; color: var(--text-dim); transition: color 0.25s; }
+  .value-bar-total { font-family: 'Lato', sans-serif; font-size: 18px; font-weight: 700; color: var(--amber); transition: color 0.25s; }
+
+  /* Guarantee box */
+  .guarantee-box {
+    margin: 28px 0; padding: 20px 22px;
+    border: 1px solid color-mix(in srgb, var(--green) 30%, transparent);
+    border-radius: 8px;
+    background: color-mix(in srgb, var(--green) 5%, transparent);
+  }
+  .guarantee-box-title {
+    font-family: 'Lato', sans-serif; font-weight: 700; font-size: 15px;
+    color: var(--green-text); margin-bottom: 6px; transition: color 0.25s;
+  }
+  .guarantee-box p { font-size: 14px; color: var(--text-dim); line-height: 1.75; transition: color 0.25s; }
+
+  @keyframes fadeUp { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:translateY(0)} }
+  .hero             { animation: fadeUp 0.55s ease both; }
+  .pricing-section  { animation: fadeUp 0.55s 0.08s ease both; }
+  .benefits-section { animation: fadeUp 0.55s 0.14s ease both; }
+
+  @media(max-width:600px) {
+    nav { padding: 12px 16px; }
+    .nav-logo { font-size: 13px; letter-spacing: 2px; gap: 7px; }
+    .nav-logo-icon { width: 14px; height: 14px; }
+    .btn-nav { font-size: 11px; padding: 8px 14px; white-space: nowrap; }
+    .page { padding: 0 16px; }
+    .hero { padding: 44px 0 36px; }
+    .bonus-card { flex-direction: column; align-items: flex-start; gap: 4px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <svg class="nav-logo-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+      <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline>
+    </svg>
+    Funded Trader Sprint™
+  </div>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
+      <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"></path>
+      </svg>
+      <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+    </button>
+    <a href="file:///Users/stio/Downloads/index%20(2).html#checkout"><button class="btn-nav">Apply Now</button></a>
+  </div>
+</nav>
+
+<!-- SCARCITY BANNER -->
+<div class="scarcity-banner">
+  <span class="scarcity-text">⚡ Next cohort — only 50 spots available</span>
+  <div class="scarcity-bar">
+    <span class="scarcity-seg taken"></span>
+    <span class="scarcity-seg taken"></span>
+    <span class="scarcity-seg taken"></span>
+    <span class="scarcity-seg taken"></span>
+    <span class="scarcity-seg taken"></span>
+    <span class="scarcity-seg taken"></span>
+    <span class="scarcity-seg taken"></span>
+    <span class="scarcity-seg available"></span>
+    <span class="scarcity-seg available"></span>
+    <span class="scarcity-seg available"></span>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- HERO -->
+  <section class="hero">
+    <svg class="hero-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+      <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline>
+    </svg>
+    <div class="eyebrow">Funded Trader Sprint™</div>
+    <h1>Pass Your First $100K<br>Prop Firm Challenge<br><span class="accent">in 30 Days.</span></h1>
+    <p class="hero-sub">
+      Most traders blow their evaluations — not because they can't trade, but because they have no structure. Wrong firm. Wrong risk. No plan. The Funded Trader Sprint System™ fixes that.
+    </p>
+    <p class="hero-bold">A structured 30-day program designed to help beginner traders secure their first funded account.</p>
+    <a href="file:///Users/stio/Downloads/index%20(2).html#checkout"><button class="btn-cta">Apply for the Program →</button></a>
+    <p class="hero-microcopy">Application required. Limited cohort enrollment.</p>
+  </section>
+
+  <!-- PROBLEM SECTION (reused outcomes styling) -->
+  <section class="outcomes-section">
+    <div class="eyebrow">The Problem</div>
+    <h2>Why Most Traders Fail Prop Firm Challenges</h2>
+    <p class="outcomes-sub">It's not your edge. It's everything around it.</p>
+    <ul class="outcomes-list">
+      <li>Trading too many strategies with no clear system</li>
+      <li>Ignoring risk rules until it's too late</li>
+      <li>Overtrading out of frustration or FOMO</li>
+      <li>Violating daily drawdown limits — one bad session ends it all</li>
+      <li>Jumping between systems and never building consistency</li>
+    </ul>
+    <p style="margin-top: 20px; font-size: 15px; font-weight: 600; color: var(--text);">The result? Blown evaluations. Lost challenge fees. Months of frustration.</p>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-section">
+    <div class="eyebrow">The System</div>
+    <h2>The Funded Trader Sprint System™</h2>
+
+    <div class="step-list">
+      <div class="step-item">
+        <span class="step-num">1</span>
+        <div class="step-content">
+          <div class="step-title">Evaluation Selection</div>
+          <div class="step-desc">Choose the right prop firm, account size, and evaluation rules. Most traders fail before they even start — we fix this first. Not all challenges are equal, and picking the wrong one is an expensive mistake.</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <span class="step-num">2</span>
+        <div class="step-content">
+          <div class="step-title">Mechanical Trade Execution</div>
+          <div class="step-desc">Trade 1–2 rule-based setups designed for consistency. No indicator overload. No strategy hopping. Mechanical execution means your emotions stay out of your decisions.</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <span class="step-num">3</span>
+        <div class="step-content">
+          <div class="step-title">Evaluation Risk Framework</div>
+          <div class="step-desc">Learn the exact risk structure required to avoid daily drawdown violations, max account drawdown, and account blowups. One sizing mistake can end your challenge — we make sure that never happens.</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <span class="step-num">4</span>
+        <div class="step-content">
+          <div class="step-title">The 30-Day Trading Sprint</div>
+          <div class="step-desc">A structured daily plan covering when to trade, what setups to take, and when to stop. Remove emotion. Trade with discipline. Follow the plan and give yourself the best possible shot at getting funded.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET -->
+  <section class="benefits-section">
+    <h2>What's Included</h2>
+    <p class="benefits-intro">Everything you need to attempt your first challenge with structure and confidence.</p>
+
+    <div class="benefit-list">
+      <div class="benefit-item">
+        <div class="benefit-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+        </div>
+        <div class="benefit-content">
+          <div class="benefit-title">Funded Trader Sprint System™</div>
+          <div class="benefit-desc">The complete step-by-step program covering prop firm strategy, mechanical trading setups, evaluation risk management, and your full sprint execution plan.</div>
+          <div class="benefit-deliverable">Deliverable: Full program access with structured modules</div>
+        </div>
+      </div>
+
+      <div class="benefit-item">
+        <div class="benefit-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        </div>
+        <div class="benefit-content">
+          <div class="benefit-title">30-Day Evaluation Sprint Plan</div>
+          <div class="benefit-desc">A daily roadmap designed to guide you through your first challenge attempt — session by session, day by day. Take the guesswork out of what to do and when.</div>
+          <div class="benefit-deliverable">Deliverable: Day-by-day sprint calendar and trading guide</div>
+        </div>
+      </div>
+
+      <div class="benefit-item">
+        <div class="benefit-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"></path></svg>
+        </div>
+        <div class="benefit-content">
+          <div class="benefit-title">Evaluation Risk Calculator &amp; Tracker</div>
+          <div class="benefit-desc">Purpose-built tools to help you stay within your drawdown limits every single day. Know your numbers before every session — never violate a rule because of bad math again.</div>
+          <div class="benefit-deliverable">Deliverable: Risk calculator and daily tracking spreadsheet</div>
+        </div>
+      </div>
+
+      <div class="benefit-item">
+        <div class="benefit-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"></path></svg>
+        </div>
+        <div class="benefit-content">
+          <div class="benefit-title">Trade Review &amp; Strategy Support</div>
+          <div class="benefit-desc">Submit your trades and receive feedback on execution. You won't be trading alone — get eyes on your setups and reinforce good habits before they cost you.</div>
+          <div class="benefit-deliverable">Deliverable: Trade submission review and feedback sessions</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BONUSES -->
+    <div style="margin-top: 40px;">
+      <div class="eyebrow">Bonuses</div>
+      <div class="bonus-list">
+        <div class="bonus-card">
+          <div class="benefit-content">
+            <div class="bonus-title">Mechanical Trader Setup Library</div>
+            <div class="benefit-desc" style="font-size:13px; margin-top: 3px;">Access to a full library of structured trade frameworks — ready to deploy in your evaluation from day one.</div>
+          </div>
+          <div class="bonus-value">$1,200 value</div>
+        </div>
+        <div class="bonus-card">
+          <div class="benefit-content">
+            <div class="bonus-title">Prop Firm Strategy Guide</div>
+            <div class="benefit-desc" style="font-size:13px; margin-top: 3px;">Learn which firms to choose and why — the right firm for your style, account size, and goals.</div>
+          </div>
+          <div class="bonus-value">$600 value</div>
+        </div>
+        <div class="bonus-card">
+          <div class="benefit-content">
+            <div class="bonus-title">Evaluation Psychology Toolkit</div>
+            <div class="benefit-desc" style="font-size:13px; margin-top: 3px;">Tools to maintain discipline and avoid emotional trading during the most high-pressure sessions of your challenge.</div>
+          </div>
+          <div class="bonus-value">$500 value</div>
+        </div>
+      </div>
+      <div class="value-bar">
+        <span class="value-bar-label">Total Program Value</span>
+        <span class="value-bar-total">$7,300</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO THIS IS FOR -->
+  <section class="who-section">
+    <h2>Who Is This For?</h2>
+
+    <h3>This Is for You If</h3>
+    <ul class="who-list for-list">
+      <li>You're a beginner trader ready to attempt your first prop firm challenge</li>
+      <li>You want to secure your first funded account with a clear, structured plan</li>
+      <li>You've blown evaluations before and want to understand why — and fix it</li>
+      <li>You're committed to following a system and trading with discipline</li>
+    </ul>
+
+    <h3>This Is Not for You If</h3>
+    <ul class="who-list not-list">
+      <li>You're looking for trade signals — this is a skill-building program, not a signal service</li>
+      <li>You're looking for quick wins with no process — this requires real commitment</li>
+      <li>You're unwilling to follow rules — the system only works if you work it</li>
+    </ul>
+  </section>
+
+  <!-- TESTIMONIALS (placeholder — replace with real ones) -->
+  <section class="pricing-section">
+    <div class="eyebrow">Social Proof</div>
+    <h2 style="font-family:&#39;Lato&#39;,sans-serif;font-size:clamp(22px,4vw,30px);font-weight:700;line-height:1.16;letter-spacing:-0.4px;color:var(--text);margin-bottom:6px;">What Traders Are Saying</h2>
+    <p class="testi-note">Results from traders who followed the Funded Trader Sprint System™.</p>
+
+    <div class="testimonial" style="margin-bottom: 12px;">
+      <div class="testi-avatar">JM</div>
+      <div>
+        <p class="testi-text">"I'd failed three challenges before this. The risk framework alone was worth the investment — I finally understood what I was doing wrong."</p>
+        <p class="testi-handle">J. Martinez — Funded Trader</p>
+      </div>
+    </div>
+
+    <div class="testimonial" style="margin-bottom: 12px;">
+      <div class="testi-avatar">AK</div>
+      <div>
+        <p class="testi-text">"The 30-day sprint plan took all the decision-making out of it. I just followed the plan and passed my $100K evaluation on the first attempt."</p>
+        <p class="testi-handle">A. Khan — Funded Trader</p>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <div class="testi-avatar">RL</div>
+      <div>
+        <p class="testi-text">"Stio's mechanical setup library is different from anything else I've seen. Clean, rule-based, and actually works under evaluation conditions."</p>
+        <p class="testi-handle">R. Lee — Alpha Academy Member</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing-section" id="checkout" style="padding: 64px 0 52px;">
+    <div class="eyebrow">Program Investment</div>
+    <div class="price-display">
+      <span style="font-family:&#39;Lato&#39;,sans-serif;font-size:28px;font-weight:700;color:var(--text-dimmer);text-decoration:line-through;letter-spacing:-0.5px;">$5,000</span>
+    </div>
+    <div class="price-display">
+      <span class="price-main">$2,500</span>
+      <span class="price-period">one-time</span>
+    </div>
+
+    <div style="margin-top: 20px; margin-bottom: 20px; padding: 16px 20px; background: color-mix(in srgb, var(--amber) 8%, transparent); border: 1px solid var(--amber); border-radius: 6px; max-width: 500px;">
+      <p style="margin: 0; font-size: 15px; color: var(--text); line-height: 1.5;">⚡ <strong>Early cohort pricing.</strong> Rate increases as spots fill. Lock in $2,500 before this cohort closes.</p>
+    </div>
+
+    <p class="price-note">Rate increases with each cohort. Current price is not guaranteed for future sprints.</p>
+
+    <div class="tier-list">
+      <div class="tier-row">
+        <div class="tier-label">$1,500 founding tier <span class="tier-badge sold">Sold Out</span></div>
+        <div class="tier-bar-track"><span class="seg on" style="width:20%;background:var(--amber)"></span><span class="seg on" style="width:20%;background:var(--amber)"></span><span class="seg on" style="width:20%;background:var(--amber)"></span><span class="seg on" style="width:20%;background:var(--amber)"></span><span class="seg on" style="width:20%;background:var(--amber)"></span></div>
+      </div>
+      <div class="tier-row">
+        <div class="tier-label">$2,000 early access tier <span class="tier-badge sold">Sold Out</span></div>
+        <div class="tier-bar-track"><span class="seg on" style="width:20%;background:var(--amber)"></span><span class="seg on" style="width:20%;background:var(--amber)"></span><span class="seg on" style="width:20%;background:var(--amber)"></span><span class="seg on" style="width:20%;background:var(--amber)"></span><span class="seg on" style="width:20%;background:var(--amber)"></span></div>
+      </div>
+      <div class="tier-row">
+        <div class="tier-label">$2,500 current tier <span class="tier-badge live">Current</span></div>
+        <div class="tier-bar-track"><span class="seg on" style="width:20%"></span><span class="seg off" style="width:20%"></span><span class="seg off" style="width:20%"></span><span class="seg off" style="width:20%"></span><span class="seg off" style="width:20%"></span></div>
+      </div>
+    </div>
+
+    <!-- Guarantee -->
+    <div class="guarantee-box">
+      <div class="guarantee-box-title">30-Day Money-Back Guarantee</div>
+      <p>Follow the Funded Trader Sprint System™ for 30 days. If you feel the program has not improved your ability to pass a prop firm challenge, you receive a full refund. No questions.</p>
+    </div>
+
+    <p class="price-desc">Built for beginner traders serious about getting their first funded account. Not a course. A sprint.</p>
+
+    <!-- CTA BUTTON — Replace href with your Stripe payment link -->
+    <a href="https://buy.stripe.com/cNicN65lU5HEgFV1d1dwc08" id="stripe-cta"><button class="btn-cta">Apply for the Program →</button></a>
+
+    <div style="display: flex; align-items: center; gap: 12px; margin-top: 20px; margin-bottom: 20px; padding: 14px 20px; background: color-mix(in srgb, var(--amber) 4%, transparent); border: 1px solid var(--border); border-radius: 6px; width: fit-content;">
+      <span style="font-size: 15px; font-weight: 600; color: var(--text);">~12 Spots Remaining</span>
+      <div style="display: flex; gap: 4px;">
+        <span style="width: 10px; height: 10px; border-radius: 2px; background: #ff4444; animation: pulse 1.5s ease-in-out infinite;"></span>
+        <span style="width: 10px; height: 10px; border-radius: 2px; background: #ff4444; animation: pulse 1.5s ease-in-out infinite;"></span>
+        <span style="width: 10px; height: 10px; border-radius: 2px; background: var(--green);"></span>
+      </div>
+    </div>
+
+    <p class="price-microcopy">Application required. If approved, you'll receive an invitation to join the next sprint cohort. Cohort limited to 50 traders.</p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">Do I need prior trading experience?</div>
+      <div class="faq-a">This program is built for beginner traders. You don't need an advanced background — you need commitment to follow the system. The Funded Trader Sprint System™ is designed to give you everything from the ground up.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Which prop firms does this work with?</div>
+      <div class="faq-a">The system is compatible with most major prop firms. The Prop Firm Strategy Guide (included as a bonus) walks you through exactly which firms to choose based on your goals and trading style.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What if I don't pass my challenge in 30 days?</div>
+      <div class="faq-a">The 30-day plan is the structure — the skills you build during the sprint carry forward. Many traders need more than one attempt, and the program gives you the framework to keep improving. The guarantee covers program value, not challenge outcomes, as trading involves inherent risk.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How does the money-back guarantee work?</div>
+      <div class="faq-a">Follow the Funded Trader Sprint System™ for the full 30 days. If you genuinely feel the program has not improved your ability to approach a prop firm challenge, you receive a full refund. Simple.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What happens after I apply?</div>
+      <div class="faq-a">After completing your application, you'll be reviewed for fit. If approved, you'll receive an invitation to join the next sprint cohort along with payment and onboarding details.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Why is enrollment limited to 50 traders?</div>
+      <div class="faq-a">Quality over volume. Keeping the cohort small means you get real feedback on your trades, real support during your sprint, and a program that actually delivers results — not a course you watch and forget.</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <div class="eyebrow">About</div>
+    <div class="about-row">
+      <div class="about-avatar">SP</div>
+      <div>
+        <div class="about-name">Hi, I'm Stio Patrick.</div>
+        <div class="about-handle">Mechanical Trader &nbsp;·&nbsp; Founder, Alpha Academy</div>
+      </div>
+    </div>
+    <div class="about-body">
+      <p>I've spent over 10 years trading derivatives markets — and I built the Mechanical Trader Framework to remove the guesswork from trading. My entire approach is built on rule-based execution, structured risk, and repeatability.</p>
+      <p>As a prop firm evaluation specialist, I've seen exactly why traders fail their challenges — and it's almost never about not knowing how to trade. It's about having no structure, no risk plan, and no daily system. That's exactly what the Funded Trader Sprint was built to fix.</p>
+      <p>The Funded Trader Sprint™ is the program I wish existed when I started. Everything in it is what I would tell a trader who is serious about getting funded — and serious about doing it the right way.</p>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta-section">
+    <h2>Ready to Get Funded?</h2>
+    <p class="final-cta-sub">Stop blowing evaluations. Stop paying challenge fees with no plan. Apply for the Funded Trader Sprint™ and give yourself a real shot at your first funded account.</p>
+    <a href="file:///Users/stio/Downloads/index%20(2).html#checkout"><button class="btn-cta">Apply for the Program →</button></a>
+    <p style="font-size:13px; color:var(--text-dimmer); margin-top: 12px;">Cohort limited to 50 traders. Application required.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-copy">Funded Trader Sprint™ – Stio Patrick / Alpha Academy</span>
+    <a class="footer-link" href="file:///Users/stio/Downloads/index%20(2).html#checkout">Apply Now →</a>
+  </footer>
+
+</div>
+
+<script>
+  const toggle = document.getElementById('themeToggle');
+  if (localStorage.getItem('lp-theme') === 'light') document.body.classList.add('light');
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('light');
+    localStorage.setItem('lp-theme', document.body.classList.contains('light') ? 'light' : 'dark');
+  });
+</script>
+
+
+</body></html>
