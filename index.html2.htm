@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)file:///Users/stio/Downloads/index%20(8).html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Funded Trader Sprint™ – Stio Patrick</title>
+
+<link rel="icon" href="file:///Users/stio/Downloads/favicon.ico" sizes="48x48">
+<link rel="icon" href="file:///Users/stio/Downloads/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="file:///Users/stio/Downloads/apple-touch-icon.png">
+
+<meta property="og:title" content="Funded Trader Sprint™ – Stio Patrick">
+<meta property="og:description" content="Pass your first $100K prop firm challenge in 30 days with the Funded Trader Sprint System™.">
+<meta property="og:image" content="https://yourdomain.com/social-image.jpg">
+<meta property="og:url" content="https://yourdomain.com">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Funded Trader Sprint™ – Stio Patrick">
+<meta name="twitter:description" content="Pass your first $100K prop firm challenge in 30 days with the Funded Trader Sprint System™.">
+<meta name="twitter:image" content="https://yourdomain.com/social-image.jpg">
+
+<link href="./index.html2_files/css2" rel="stylesheet">
+<style>
+  :root {
+    --bg:           #0e0d0b;
+    --surface:      #161410;
+    --card:         #1e1b14;
+    --border:       #302c22;
+    --border-light: #3e3928;
+    --amber:        #FFCE85;
+    --amber-glow:   rgba(255,206,133,0.12);
+    --green:        #3ecf6e;
+    --green-text:   #3ecf6e;
+    --muted:        #786e58;
+    --text:         #f2ede0;
+    --text-dim:     #c4b89a;
+    --text-dimmer:  #786e58;
+    --toggle-bg:    #302c22;
+    --toggle-icon:  #c4b89a;
+  }
+
+  body.light {
+    --bg:           #faf7f0;
+    --surface:      #f2ece0;
+    --card:         #ebe4d4;
+    --border:       #d4c9b0;
+    --border-light: #bfb49a;
+    --amber:        #b08840;
+    --amber-glow:   rgba(176,136,64,0.09);
+    --green:        #166d34;
+    --green-text:   #166d34;
+    --muted:        #7a7060;
+    --text:         #18160f;
+    --text-dim:     #3e3830;
+    --text-dimmer:  #7a7060;
+    --toggle-bg:    #e0d8c8;
+    --toggle-icon:  #3e3830;
+  }
+
+  *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    line-height: 1.72;
+    -webkit-font-smoothing: antialiased;
+    transition: background 0.25s, color 0.25s;
+  }
+
+  body::after {
+    content: '';
+    position: fixed; inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
+    pointer-events: none; z-index: 9999; mix-blend-mode: overlay;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 15px 32px;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border);
+    transition: background 0.25s, border-color 0.25s;
+  }
+
+  .nav-logo {
+    display: flex; align-items: center; gap: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px; font-weight: 700; letter-spacing: 3px;
+    text-transform: uppercase; color: var(--text);
+    transition: color 0.25s;
+  }
+  .nav-logo-icon { color: var(--amber); }
+
+  .nav-right { display: flex; align-items: center; gap: 10px; }
+
+  .theme-toggle {
+    width: 36px; height: 36px;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--toggle-bg);
+    border: 1px solid var(--border-light);
+    border-radius: 8px; cursor: pointer; flex-shrink: 0;
+    color: var(--toggle-icon);
+    transition: all 0.2s;
+  }
+  .theme-toggle:hover { border-color: var(--amber); color: var(--amber); }
+
+  .icon-moon { display: block; }
+  .icon-sun  { display: none; }
+  body.light .icon-moon { display: none; }
+  body.light .icon-sun  { display: block; }
+
+  .btn-nav {
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;
+    background: var(--amber); color: #0e0d0b;
+    border: none; border-radius: 6px;
+    padding: 8px 18px; cursor: pointer; transition: all 0.2s;
+  }
+  .btn-nav:hover { filter: brightness(1.08); transform: translateY(-1px); box-shadow: 0 0 18px var(--amber-glow), 0 0 6px color-mix(in srgb, var(--amber) 40%, transparent); }
+
+  .page { max-width: 660px; margin: 0 auto; padding: 0 24px; }
+
+  .eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--text-dimmer); margin-bottom: 12px; transition: color 0.25s;
+  }
+
+  .hero {
+    padding: 64px 0 52px;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.25s;
+  }
+
+  .hero-icon { width: 44px; height: 44px; margin-bottom: 24px; color: var(--amber); transition: color 0.25s; }
+
+  .hero h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(28px, 5vw, 40px); font-weight: 700;
+    line-height: 1.13; letter-spacing: -0.5px;
+    color: var(--text); margin-bottom: 18px; max-width: 560px;
+    transition: color 0.25s;
+  }
+  .hero h1 .accent { color: var(--amber); }
+
+  .hero-sub {
+    font-size: 15px; color: var(--text-dim);
+    max-width: 520px; margin-bottom: 14px; line-height: 1.75;
+    transition: color 0.25s;
+  }
+
+  .hero-bold {
+    font-size: 15px; font-weight: 600; color: var(--text);
+    max-width: 520px; margin-bottom: 30px; line-height: 1.75;
+    transition: color 0.25s;
+  }
+
+  .hero-microcopy {
+    font-size: 13px; color: var(--text-dimmer); margin-top: 12px;
+    transition: color 0.25s;
+  }
+
+  .btn-cta {
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;
+    background: var(--amber); color: #0e0d0b;
+    border: none; border-radius: 6px;
+    padding: 13px 26px; cursor: pointer; transition: all 0.2s;
+    display: inline-block;
+  }
+  .btn-cta:hover { filter: brightness(1.08); transform: translateY(-1px); box-shadow: 0 0 24px var(--amber-glow), 0 0 8px color-mix(in srgb, var(--amber) 45%, transparent); }
+
+  .pricing-section {
+    padding: 48px 0 40px;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.25s;
+  }
+
+  .price-display { display: flex; align-items: baseline; gap: 8px; margin-bottom: 6px; }
+
+  .price-main {
+    font-family: 'Lato', sans-serif;
+    font-size: 54px; font-weight: 700; letter-spacing: -1.5px;
+    color: var(--text); transition: color 0.25s;
+  }
+  .price-period { font-size: 14px; font-weight: 500; color: var(--text-dim); transition: color 0.25s; }
+  .price-note { font-size: 13px; color: var(--text-dim); margin-bottom: 12px; transition: color 0.25s; }
+  .price-desc { font-size: 14px; color: var(--text-dim); line-height: 1.75; margin-bottom: 28px; transition: color 0.25s; }
+  .price-microcopy { font-size: 12px; color: var(--text-dimmer); margin-top: 12px; transition: color 0.25s; }
+
+  .tier-list { display: flex; flex-direction: column; gap: 12px; margin: 24px 0; }
+  .tier-row  { display: flex; flex-direction: column; gap: 5px; }
+  .tier-label {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 12px; font-weight: 600; color: var(--text-dim);
+    transition: color 0.25s;
+  }
+  .tier-badge {
+    font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+    padding: 2px 7px; border-radius: 3px;
+  }
+  .tier-badge.sold { background: var(--surface); color: var(--muted); border: 1px solid var(--border); transition: all 0.25s; }
+  .tier-badge.live {
+    background: var(--amber-glow); color: var(--amber);
+    border: 1px solid color-mix(in srgb, var(--amber) 30%, transparent);
+    transition: all 0.25s;
+  }
+  .tier-bar-track {
+    height: 9px; border-radius: 3px; overflow: hidden;
+    background: var(--surface); display: flex; gap: 2px;
+    border: 1px solid var(--border);
+    transition: background 0.25s, border-color 0.25s;
+  }
+  .seg { height: 100%; border-radius: 2px; flex-shrink: 0; transition: background 0.25s; }
+  .seg.on  { background: var(--green); }
+  .seg.off { background: var(--border); }
+
+  .testi-note { font-size: 12px; color: var(--text-dimmer); margin-bottom: 14px; transition: color 0.25s; }
+
+  .testimonial {
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 16px 18px;
+    border: 1px solid var(--border); border-radius: 8px;
+    background: var(--surface);
+    transition: background 0.25s, border-color 0.25s;
+  }
+
+  .testi-avatar {
+    width: 64px; height: 64px; border-radius: 50%;
+    background: var(--card); flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Lato', sans-serif; font-size: 15px; font-weight: 700;
+    color: var(--amber); border: 1px solid var(--border-light);
+    transition: background 0.25s;
+  }
+
+  .testi-text {
+    font-size: 15px; font-style: italic; font-weight: 400; color: var(--text-dim);
+    line-height: 1.65; margin-bottom: 5px; transition: color 0.25s;
+  }
+  .testi-handle { font-size: 12px; font-weight: 600; color: var(--muted); transition: color 0.25s; }
+
+  .benefits-section {
+    padding: 48px 0;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.25s;
+  }
+
+  .benefits-section h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(22px, 4vw, 30px); font-weight: 700;
+    line-height: 1.16; letter-spacing: -0.4px;
+    color: var(--text); margin-bottom: 6px;
+    transition: color 0.25s;
+  }
+
+  .benefits-intro {
+    font-size: 14px; color: var(--text-dim); line-height: 1.75; margin-bottom: 28px;
+    transition: color 0.25s;
+  }
+
+  .benefit-list { display: flex; flex-direction: column; gap: 24px; }
+
+  .benefit-item {
+    display: flex; gap: 16px; align-items: flex-start;
+  }
+
+  .benefit-icon-wrap {
+    width: 32px; height: 32px; border-radius: 50%;
+    border: 1px solid color-mix(in srgb, var(--amber) 35%, transparent);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.25s;
+  }
+  .benefit-icon-wrap svg {
+    width: 15px; height: 15px; color: var(--amber);
+    transition: color 0.25s;
+  }
+
+  .benefit-content { flex: 1; }
+
+  .benefit-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700; font-size: 16px;
+    color: var(--text); margin-bottom: 4px;
+    transition: color 0.25s;
+  }
+
+  .benefit-desc { font-size: 14px; color: var(--text-dim); line-height: 1.75; transition: color 0.25s; }
+  .benefit-deliverable {
+    font-size: 13px; color: var(--text-dimmer); margin-top: 6px; line-height: 1.65;
+    transition: color 0.25s;
+  }
+
+  .how-section {
+    padding: 56px 0;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.25s;
+  }
+
+  .how-section h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(22px, 4vw, 30px); font-weight: 700;
+    line-height: 1.16; letter-spacing: -0.4px;
+    color: var(--text); margin-bottom: 28px;
+    transition: color 0.25s;
+  }
+
+  .step-list { display: flex; flex-direction: column; gap: 24px; }
+
+  .step-item {
+    display: flex; gap: 16px; align-items: flex-start;
+  }
+
+  .step-num {
+    font-family: 'Lato', sans-serif;
+    font-size: 13px; font-weight: 700; color: var(--amber);
+    width: 32px; height: 32px; border-radius: 50%;
+    border: 1px solid color-mix(in srgb, var(--amber) 35%, transparent);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    transition: all 0.25s;
+  }
+
+  .step-content { flex: 1; }
+
+  .step-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700; font-size: 16px;
+    color: var(--text); margin-bottom: 4px;
+    transition: color 0.25s;
+  }
+
+  .step-desc {
+    font-size: 14px; color: var(--text-dim); line-height: 1.75;
+    transition: color 0.25s;
+  }
+
+  .who-section {
+    padding: 56px 0;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.25s;
+  }
+
+  .who-section h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(22px, 4vw, 30px); font-weight: 700;
+    line-height: 1.13; letter-spacing: -0.5px;
+    color: var(--text); margin-bottom: 18px; transition: color 0.25s;
+  }
+
+  .who-section h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px; font-weight: 700;
+    color: var(--text); margin-bottom: 12px; margin-top: 28px;
+    transition: color 0.25s;
+  }
+
+  .who-section h3:first-of-type { margin-top: 0; }
+
+  .who-list {
+    list-style: none; display: flex; flex-direction: column; gap: 10px;
+  }
+  .who-list li {
+    display: flex; align-items: flex-start; gap: 10px;
+    font-size: 14px; font-weight: 500; color: var(--text-dim);
+    transition: color 0.25s;
+  }
+  .who-list.for-list li::before {
+    content: '\2713'; color: var(--green-text); font-weight: 700; font-size: 13px;
+    flex-shrink: 0; margin-top: 2px; transition: color 0.25s;
+  }
+  .who-list.not-list li::before {
+    content: '\2717'; color: var(--muted); font-weight: 700; font-size: 13px;
+    flex-shrink: 0; margin-top: 2px; transition: color 0.25s;
+  }
+
+  .outcomes-section {
+    padding: 56px 0;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.25s;
+  }
+
+  .outcomes-section h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(22px, 4vw, 30px); font-weight: 700;
+    line-height: 1.16; letter-spacing: -0.4px;
+    color: var(--text); margin-bottom: 6px;
+    transition: color 0.25s;
+  }
+
+  .outcomes-sub {
+    font-size: 14px; color: var(--text-dim); margin-bottom: 20px; transition: color 0.25s;
+  }
+
+  .outcomes-list {
+    list-style: none; display: flex; flex-direction: column; gap: 10px;
+  }
+  .outcomes-list li {
+    display: flex; align-items: flex-start; gap: 10px;
+    font-size: 14px; font-weight: 500; color: var(--text-dim);
+    transition: color 0.25s;
+  }
+  .outcomes-list li::before {
+    content: '\2192'; color: var(--amber); font-weight: 700; font-size: 13px;
+    flex-shrink: 0; margin-top: 2px; transition: color 0.25s;
+  }
+
+  .faq-section {
+    padding: 56px 0;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.25s;
+  }
+
+  .faq-section h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(22px, 4vw, 30px); font-weight: 700;
+    line-height: 1.16; letter-spacing: -0.4px;
+    color: var(--text); margin-bottom: 28px;
+    transition: color 0.25s;
+  }
+
+  .faq-item {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.25s;
+  }
+  .faq-item:first-of-type { border-top: 1px solid var(--border); }
+  .faq-item:last-child { border-bottom: none; }
+
+  .faq-q {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700; font-size: 15px;
+    color: var(--text); margin-bottom: 8px;
+    transition: color 0.25s;
+  }
+
+  .faq-a {
+    font-size: 14px; color: var(--text-dim); line-height: 1.75;
+    transition: color 0.25s;
+  }
+
+  .about-section { padding: 56px 0; border-bottom: 1px solid var(--border); transition: border-color 0.25s; }
+  .about-row { display: flex; gap: 18px; align-items: flex-start; margin-bottom: 20px; }
+  .about-avatar {
+    width: 62px; height: 62px; border-radius: 50%;
+    background: var(--card); flex-shrink: 0;
+    border: 1px solid var(--border-light);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 700;
+    color: var(--amber); transition: background 0.25s;
+  }
+  .about-name {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700; font-size: 20px; color: var(--text);
+    margin-bottom: 4px; transition: color 0.25s;
+  }
+  .about-handle { font-size: 12px; font-weight: 500; color: var(--muted); transition: color 0.25s; }
+  .about-body { font-size: 14px; color: var(--text-dim); line-height: 1.8; display: flex; flex-direction: column; gap: 14px; transition: color 0.25s; }
+
+  .final-cta-section {
+    padding: 56px 0;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.25s;
+  }
+
+  .final-cta-section h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: clamp(24px, 4vw, 34px); font-weight: 700;
+    line-height: 1.16; letter-spacing: -0.4px;
+    color: var(--text); margin-bottom: 12px;
+    transition: color 0.25s;
+  }
+
+  .final-cta-sub {
+    font-size: 15px; color: var(--text-dim); line-height: 1.75; margin-bottom: 24px;
+    transition: color 0.25s;
+  }
+
+  .scarcity-banner {
+    padding: 16px 24px;
+    background: color-mix(in srgb, #ff4444 8%, var(--bg));
+    border-bottom: 1px solid color-mix(in srgb, #ff4444 20%, var(--border));
+    display: flex; align-items: center; justify-content: center; gap: 16px;
+    transition: all 0.25s;
+  }
+
+  .scarcity-text {
+    font-size: 14px; font-weight: 600; color: var(--text);
+    transition: color 0.25s;
+  }
+
+  .scarcity-bar {
+    display: flex; gap: 3px; align-items: center;
+  }
+
+  .scarcity-seg {
+    width: 12px; height: 12px; border-radius: 2px;
+    transition: background 0.25s;
+  }
+
+  .scarcity-seg.taken { background: #ff4444; animation: pulse 1.5s ease-in-out infinite; }
+  .scarcity-seg.available { background: var(--green); }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  footer { padding: 24px 0; display: flex; align-items: center; justify-content: space-between; }
+  .footer-copy { font-size: 12px; font-weight: 500; color: var(--muted); transition: color 0.25s; }
+  .footer-link { font-size: 12px; font-weight: 600; color: var(--muted); transition: color 0.2s; }
+  .footer-link:hover { color: var(--amber); }
+
+  /* Bonus card styles */
+  .bonus-list { display: flex; flex-direction: column; gap: 12px; margin-top: 28px; }
+  .bonus-card {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 14px 18px;
+    border: 1px solid var(--border); border-radius: 8px;
+    background: var(--surface);
+    transition: background 0.25s, border-color 0.25s;
+  }
+  .bonus-title { font-size: 14px; font-weight: 600; color: var(--text); transition: color 0.25s; }
+  .bonus-value { font-size: 12px; font-weight: 700; color: var(--amber); white-space: nowrap; margin-left: 12px; transition: color 0.25s; }
+
+  /* Value total bar */
+  .value-bar {
+    margin-top: 20px; padding: 16px 20px;
+    border: 1px solid var(--border-light); border-radius: 6px;
+    background: var(--card);
+    display: flex; justify-content: space-between; align-items: center;
+    transition: all 0.25s;
+  }
+  .value-bar-label { font-size: 13px; font-weight: 600; color: var(--text-dim); transition: color 0.25s; }
+  .value-bar-total { font-family: 'Lato', sans-serif; font-size: 18px; font-weight: 700; color: var(--amber); transition: color 0.25s; }
+
+  /* Guarantee box */
+  .guarantee-box {
+    margin: 28px 0; padding: 20px 22px;
+    border: 1px solid color-mix(in srgb, var(--green) 30%, transparent);
+    border-radius: 8px;
+    background: color-mix(in srgb, var(--green) 5%, transparent);
+  }
+  .guarantee-box-title {
+    font-family: 'Lato', sans-serif; font-weight: 700; font-size: 15px;
+    color: var(--green-text); margin-bottom: 6px; transition: color 0.25s;
+  }
+  .guarantee-box p { font-size: 14px; color: var(--text-dim); line-height: 1.75; transition: color 0.25s; }
+
+  @keyframes fadeUp { from{opacity:0;transform:translateY(18px)} to{opacity:1;transform:translateY(0)} }
+  .hero             { animation: fadeUp 0.55s ease both; }
+  .pricing-section  { animation: fadeUp 0.55s 0.08s ease both; }
+  .benefits-section { animation: fadeUp 0.55s 0.14s ease both; }
+
+  @media(max-width:600px) {
+    nav { padding: 12px 16px; }
+    .nav-logo { font-size: 13px; letter-spacing: 2px; gap: 7px; }
+    .nav-logo-icon { width: 14px; height: 14px; }
+    .btn-nav { font-size: 11px; padding: 8px 14px; white-space: nowrap; }
+    .page { padding: 0 16px; }
+    .hero { padding: 44px 0 36px; }
+    .bonus-card { flex-direction: column; align-items: flex-start; gap: 4px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <svg class="nav-logo-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+      <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline>
+    </svg>
+    Funded Trader Sprint™
+  </div>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
+      <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"></path>
+      </svg>
+      <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+    </button>
+    <a href="file:///Users/stio/Downloads/index%20(8).html#checkout"><button class="btn-nav">Apply Now</button></a>
+  </div>
+</nav>
+
+<!-- SCARCITY BANNER -->
+<div class="scarcity-banner">
+  <span class="scarcity-text">⚡ Next cohort — only 20 spots available</span>
+  <div class="scarcity-bar">
+    <span class="scarcity-seg taken"></span>
+    <span class="scarcity-seg taken"></span>
+    <span class="scarcity-seg taken"></span>
+    <span class="scarcity-seg taken"></span>
+    <span class="scarcity-seg taken"></span>
+    <span class="scarcity-seg taken"></span>
+    <span class="scarcity-seg taken"></span>
+    <span class="scarcity-seg available"></span>
+    <span class="scarcity-seg available"></span>
+    <span class="scarcity-seg available"></span>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- HERO -->
+  <section class="hero">
+    <svg class="hero-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+      <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline>
+    </svg>
+    <div class="eyebrow">Funded Trader Sprint™</div>
+    <h1>Pass Your First $100K<br>Prop Firm Challenge<br><span class="accent">in 30 Days.</span></h1>
+    <p class="hero-sub">
+      Most traders blow their evaluations — not because they can't trade, but because they have no structure. No defined rules. No trading plan. No evaluation strategy. The Funded Trader Sprint System™ fixes that.
+    </p>
+    <p class="hero-bold">A structured 30-day program designed to help beginner traders secure their first funded account.</p>
+    <a href="file:///Users/stio/Downloads/index%20(8).html#checkout"><button class="btn-cta">Apply for the Program →</button></a>
+    <p class="hero-microcopy">Application required. Limited to 20 traders per cohort.</p>
+  </section>
+
+  <!-- PROBLEM SECTION (reused outcomes styling) -->
+  <section class="outcomes-section">
+    <div class="eyebrow">The Problem</div>
+    <h2>Why Most Traders Fail Prop Firm Challenges</h2>
+    <p class="outcomes-sub">It's not your edge. It's everything around it.</p>
+    <ul class="outcomes-list">
+      <li>Trading too many strategies with no clear system</li>
+      <li>Ignoring risk rules until it's too late</li>
+      <li>Overtrading out of frustration or FOMO</li>
+      <li>Violating daily drawdown limits</li>
+      <li>Jumping between systems and never building consistency</li>
+    </ul>
+    <p style="margin-top: 20px; font-size: 15px; font-weight: 600; color: var(--text);">The result? Blown evaluations. Lost challenge fees. Months of frustration.</p>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-section">
+    <div class="eyebrow">The System</div>
+    <h2>The Funded Trader Sprint System™</h2>
+
+    <div class="step-list">
+      <div class="step-item">
+        <span class="step-num">1</span>
+        <div class="step-content">
+          <div class="step-title">Evaluation Selection</div>
+          <div class="step-desc">Choose the right prop firm, account size, and evaluation rules. Most traders fail before they even start — we fix this first. Not all challenges are equal, and picking the wrong one is an expensive mistake.</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <span class="step-num">2</span>
+        <div class="step-content">
+          <div class="step-title">Mechanical Trade Execution</div>
+          <div class="step-desc">Trade 1–2 rule-based setups designed for consistency. No indicator overload. No strategy hopping. Mechanical execution means your emotions stay out of your decisions. Less emotion. Higher win rate.</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <span class="step-num">3</span>
+        <div class="step-content">
+          <div class="step-title">Evaluation Risk Framework</div>
+          <div class="step-desc">Learn the exact risk structure required to avoid daily drawdown violations, max account drawdown, and account blowups. One sizing mistake can end your challenge — we make sure that never happens.</div>
+        </div>
+      </div>
+      <div class="step-item">
+        <span class="step-num">4</span>
+        <div class="step-content">
+          <div class="step-title">The 30-Day Trading Sprint</div>
+          <div class="step-desc">A structured daily plan covering when to trade, what setups to take, and when to stop. Remove emotion. Trade with discipline. Follow the plan and give yourself the best possible shot at getting funded.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET -->
+  <section class="benefits-section">
+    <h2>What's Included</h2>
+    <p class="benefits-intro">Everything you need to attempt your first challenge with structure and confidence.</p>
+
+    <div class="benefit-list">
+      <div class="benefit-item">
+        <div class="benefit-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+        </div>
+        <div class="benefit-content">
+          <div class="benefit-title">Funded Trader Sprint System™</div>
+          <div class="benefit-desc">The complete step-by-step program covering prop firm strategy, mechanical trading setups, evaluation risk management, and your full sprint execution plan.</div>
+          <div class="benefit-deliverable">Deliverable: Full program access with structured modules</div>
+        </div>
+      </div>
+
+      <div class="benefit-item">
+        <div class="benefit-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        </div>
+        <div class="benefit-content">
+          <div class="benefit-title">30-Day Evaluation Sprint Plan</div>
+          <div class="benefit-desc">A daily roadmap designed to guide you through your first challenge attempt — session by session, day by day. Take the guesswork out of what to do and when.</div>
+          <div class="benefit-deliverable">Deliverable: Day-by-day sprint calendar and trading guide</div>
+        </div>
+      </div>
+
+      <div class="benefit-item">
+        <div class="benefit-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"></path></svg>
+        </div>
+        <div class="benefit-content">
+          <div class="benefit-title">Evaluation Risk Calculator &amp; Tracker</div>
+          <div class="benefit-desc">Purpose-built tools to help you stay within your drawdown limits every single day. Know your numbers before every session — never violate a rule because of bad math again.</div>
+          <div class="benefit-deliverable">Deliverable: Risk calculator and daily tracking spreadsheet</div>
+        </div>
+      </div>
+
+      <div class="benefit-item">
+        <div class="benefit-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"></path></svg>
+        </div>
+        <div class="benefit-content">
+          <div class="benefit-title">Trade Review &amp; Strategy Support</div>
+          <div class="benefit-desc">Submit your trades and receive feedback on execution. You won't be trading alone — get eyes on your setups and reinforce good habits before they cost you.</div>
+          <div class="benefit-deliverable">Deliverable: Trade submission review and feedback sessions</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BONUSES -->
+    <div style="margin-top: 40px;">
+      <div class="eyebrow">Bonuses</div>
+      <div class="bonus-list">
+        <div class="bonus-card">
+          <div class="benefit-content">
+            <div class="bonus-title">Mechanical Trader Setup Library</div>
+            <div class="benefit-desc" style="font-size:13px; margin-top: 3px;">Your complete collection of rule-based trading setups used inside the sprint framework.</div>
+          </div>
+          <div class="bonus-value">$1,200 value</div>
+        </div>
+        <div class="bonus-card">
+          <div class="benefit-content">
+            <div class="bonus-title">Prop Firm Strategy Guide</div>
+            <div class="benefit-desc" style="font-size:13px; margin-top: 3px;">A breakdown of the most popular prop firms — challenge rules, drawdown differences, and scaling plans compared.</div>
+          </div>
+          <div class="bonus-value">$600 value</div>
+        </div>
+        <div class="bonus-card">
+          <div class="benefit-content">
+            <div class="bonus-title">Evaluation Psychology Toolkit</div>
+            <div class="benefit-desc" style="font-size:13px; margin-top: 3px;">Discipline checklist, trading rules framework, and decision-making tools to keep emotions out of your challenge.</div>
+          </div>
+          <div class="bonus-value">$500 value</div>
+        </div>
+        <div class="bonus-card">
+          <div class="benefit-content">
+            <div class="bonus-title">Prop Firm Rule Cheat Sheet</div>
+            <div class="benefit-desc" style="font-size:13px; margin-top: 3px;">Quick-reference guides for daily loss limits, max drawdown rules, profit targets, and consistency rules.</div>
+          </div>
+          <div class="bonus-value">$700 value</div>
+        </div>
+        <div class="bonus-card">
+          <div class="benefit-content">
+            <div class="bonus-title">Evaluation Risk Calculator</div>
+            <div class="benefit-desc" style="font-size:13px; margin-top: 3px;">Calculates position size and risk per trade based on prop firm rules. Prevents drawdown violations before they happen.</div>
+          </div>
+          <div class="bonus-value">$900 value</div>
+        </div>
+        <div class="bonus-card">
+          <div class="benefit-content">
+            <div class="bonus-title">30-Day Trading Sprint Calendar</div>
+            <div class="benefit-desc" style="font-size:13px; margin-top: 3px;">Day-by-day guide covering when to trade, when to stop, and how to pace your challenge from start to finish.</div>
+          </div>
+          <div class="bonus-value">$1,000 value</div>
+        </div>
+        <div class="bonus-card">
+          <div class="benefit-content">
+            <div class="bonus-title">Trade Review Framework</div>
+            <div class="benefit-desc" style="font-size:13px; margin-top: 3px;">Trade review template, execution scoring system, and mistake tracker to sharpen your edge during the sprint.</div>
+          </div>
+          <div class="bonus-value">$800 value</div>
+        </div>
+        <div class="bonus-card">
+          <div class="benefit-content">
+            <div class="bonus-title">Evaluation Recovery Plan</div>
+            <div class="benefit-desc" style="font-size:13px; margin-top: 3px;">Recovery protocol, trade reduction strategy, and drawdown management framework for when things get tough.</div>
+          </div>
+          <div class="bonus-value">$1,000 value</div>
+        </div>
+      </div>
+      <div class="value-bar" style="margin-top:16px;">
+        <span class="value-bar-label">Total Bonus Value</span>
+        <span class="value-bar-total">$6,700</span>
+      </div>
+      <div class="value-bar" style="margin-top:8px; border-color: var(--amber);">
+        <span class="value-bar-label" style="font-weight:700; color:var(--text);">Total Value Stack</span>
+        <span class="value-bar-total" style="font-size:22px;">$14,000</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO THIS IS FOR -->
+  <section class="who-section">
+    <h2>Who Is This For?</h2>
+
+    <h3>This Is for You If</h3>
+    <ul class="who-list for-list">
+      <li>You're a beginner trader ready to attempt your first prop firm challenge</li>
+      <li>You want to secure your first funded account with a clear, structured plan</li>
+      <li>You've blown evaluations before and want to understand why — and fix it</li>
+      <li>You're committed to following a system and trading with discipline</li>
+    </ul>
+
+    <h3>This Is Not for You If</h3>
+    <ul class="who-list not-list">
+      <li>You're looking for trade signals — this is a skill-building program, not a signal service</li>
+      <li>You're looking for quick wins with no process — this requires real commitment</li>
+      <li>You're unwilling to follow rules — the system only works if you work it</li>
+    </ul>
+  </section>
+
+  <!-- TESTIMONIALS (placeholder — replace with real ones) -->
+  <section class="pricing-section">
+    <div class="eyebrow">Social Proof</div>
+    <h2 style="font-family:&#39;Lato&#39;,sans-serif;font-size:clamp(22px,4vw,30px);font-weight:700;line-height:1.16;letter-spacing:-0.4px;color:var(--text);margin-bottom:6px;">What Traders Are Saying</h2>
+    <p class="testi-note">Results from traders who followed the Funded Trader Sprint System™.</p>
+
+    <div class="testimonial" style="margin-bottom: 12px;">
+      <div class="testi-avatar" style="padding:0;overflow:hidden;"><img src="data:image/jpeg;base64,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" style="width:64px;height:64px;object-fit:cover;border-radius:50%;"></div>
+      <div>
+        <p class="testi-text">"Before the Funded Trader Sprint I had blown four prop firm challenges because I kept overtrading and ignoring drawdown rules. The framework forced me to slow down and follow a plan. I passed my $100K evaluation in 27 days."</p>
+        <p class="testi-handle">James Holloway — Retail Forex Trader, 2 Years Experience</p>
+      </div>
+    </div>
+
+    <div class="testimonial" style="margin-bottom: 12px;">
+      <div class="testi-avatar" style="padding:0;overflow:hidden;"><img src="data:image/jpeg;base64,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" style="width:64px;height:64px;object-fit:cover;border-radius:50%;"></div>
+      <div>
+        <p class="testi-text">"The biggest realization was that passing prop firm challenges isn't about making huge profits, it's about controlling risk. Once I followed the evaluation risk framework, everything clicked."</p>
+        <p class="testi-handle">Lucas Ferreira — Futures Trader, Apex Evaluation</p>
+      </div>
+    </div>
+
+    <div class="testimonial" style="margin-bottom: 12px;">
+      <div class="testi-avatar" style="padding:0;overflow:hidden;"><img src="data:image/jpeg;base64,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" style="width:64px;height:64px;object-fit:cover;border-radius:50%;"></div>
+      <div>
+        <p class="testi-text">"I was skeptical at first because most trading programs promise too much. What I liked about Stio's approach was the focus on structure and discipline instead of signals. The system actually made sense."</p>
+        <p class="testi-handle">Michael Chen — Part-Time Trader, Software Engineer</p>
+      </div>
+    </div>
+
+    <div class="testimonial" style="margin-bottom: 12px;">
+      <div class="testi-avatar" style="padding:0;overflow:hidden;"><img src="data:image/jpeg;base64,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" style="width:64px;height:64px;object-fit:cover;border-radius:50%;"></div>
+      <div>
+        <p class="testi-text">"As someone who already trades futures, I appreciated the structured approach to evaluations. The risk framework and sprint plan are exactly what new traders need to avoid blowing accounts."</p>
+        <p class="testi-handle">Sarah Thompson — Professional Futures Trader</p>
+      </div>
+    </div>
+
+    <div class="testimonial">
+      <div class="testi-avatar" style="padding:0;overflow:hidden;"><img src="data:image/jpeg;base64,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" style="width:64px;height:64px;object-fit:cover;border-radius:50%;"></div>
+      <div>
+        <p class="testi-text">"Getting funded changed how I see trading. Instead of risking my own savings, I'm now trading larger capital with a clear plan. The sprint structure gave me confidence to finally take prop firms seriously."</p>
+        <p class="testi-handle">Ethan Walker — Independent Trader, Crypto Markets</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing-section" id="checkout" style="padding: 64px 0 52px;">
+    <div class="eyebrow">Program Investment</div>
+    <div class="price-display">
+      <span style="font-family:&#39;Lato&#39;,sans-serif;font-size:28px;font-weight:700;color:var(--text-dimmer);text-decoration:line-through;letter-spacing:-0.5px;">$5,000</span>
+    </div>
+    <div class="price-display">
+      <span class="price-main">$2,500</span>
+      <span class="price-period">one-time</span>
+    </div>
+
+    <div style="margin-top: 20px; margin-bottom: 20px; padding: 16px 20px; background: color-mix(in srgb, var(--amber) 8%, transparent); border: 1px solid var(--amber); border-radius: 6px; max-width: 500px;">
+      <p style="margin: 0; font-size: 15px; color: var(--text); line-height: 1.5;">⚡ <strong>Early cohort pricing.</strong> Rate increases as spots fill. Lock in $2,500 before this cohort closes.</p>
+    </div>
+
+    <p class="price-note">Rate increases with each cohort. Current price is not guaranteed for future sprints.</p>
+
+    <div class="tier-list">
+      <div class="tier-row">
+        <div class="tier-label">$1,500 founding tier <span class="tier-badge sold">Sold Out</span></div>
+        <div class="tier-bar-track"><span class="seg on" style="width:20%;background:var(--amber)"></span><span class="seg on" style="width:20%;background:var(--amber)"></span><span class="seg on" style="width:20%;background:var(--amber)"></span><span class="seg on" style="width:20%;background:var(--amber)"></span><span class="seg on" style="width:20%;background:var(--amber)"></span></div>
+      </div>
+      <div class="tier-row">
+        <div class="tier-label">$2,000 early access tier <span class="tier-badge sold">Sold Out</span></div>
+        <div class="tier-bar-track"><span class="seg on" style="width:20%;background:var(--amber)"></span><span class="seg on" style="width:20%;background:var(--amber)"></span><span class="seg on" style="width:20%;background:var(--amber)"></span><span class="seg on" style="width:20%;background:var(--amber)"></span><span class="seg on" style="width:20%;background:var(--amber)"></span></div>
+      </div>
+      <div class="tier-row">
+        <div class="tier-label">$2,500 current tier <span class="tier-badge live">Current</span></div>
+        <div class="tier-bar-track"><span class="seg on" style="width:20%"></span><span class="seg off" style="width:20%"></span><span class="seg off" style="width:20%"></span><span class="seg off" style="width:20%"></span><span class="seg off" style="width:20%"></span></div>
+      </div>
+    </div>
+
+    <!-- Guarantee -->
+    <div class="guarantee-box">
+      <div class="guarantee-box-title">30-Day Money-Back Guarantee</div>
+      <p>Follow the Funded Trader Sprint System™ for 30 days. If you feel the program has not improved your ability to pass a prop firm challenge, you receive a full refund. No questions.</p>
+    </div>
+
+    <p class="price-desc">Total value: $14,000. Your investment today: $2,500. Built for beginner traders serious about getting their first funded account. Not a course. A sprint.</p>
+
+    <!-- CTA BUTTON — Replace href with your Stripe payment link -->
+    <a href="https://buy.stripe.com/14AcN6eWu6LIgFVg7Vdwc09" id="stripe-cta"><button class="btn-cta">Apply for the Program →</button></a>
+
+    <div style="display: flex; align-items: center; gap: 12px; margin-top: 20px; margin-bottom: 20px; padding: 14px 20px; background: color-mix(in srgb, var(--amber) 4%, transparent); border: 1px solid var(--border); border-radius: 6px; width: fit-content;">
+      <span style="font-size: 15px; font-weight: 600; color: var(--text);">~8 Spots Remaining</span>
+      <div style="display: flex; gap: 4px;">
+        <span style="width: 10px; height: 10px; border-radius: 2px; background: #ff4444; animation: pulse 1.5s ease-in-out infinite;"></span>
+        <span style="width: 10px; height: 10px; border-radius: 2px; background: #ff4444; animation: pulse 1.5s ease-in-out infinite;"></span>
+        <span style="width: 10px; height: 10px; border-radius: 2px; background: var(--green);"></span>
+      </div>
+    </div>
+
+    <p class="price-microcopy">Application required. If approved, you'll receive an invitation to join the next sprint cohort. Cohort limited to 20 traders.</p>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-q">Do I need prior trading experience?</div>
+      <div class="faq-a">This program is built for beginner traders. You don't need an advanced background — you need commitment to follow the system. The Funded Trader Sprint System™ is designed to give you everything from the ground up.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Which prop firms does this work with?</div>
+      <div class="faq-a">The system is compatible with most major prop firms. The Prop Firm Strategy Guide (included as a bonus) walks you through exactly which firms to choose based on your goals and trading style.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What if I don't pass my challenge in 30 days?</div>
+      <div class="faq-a">The 30-day plan is the structure — the skills you build during the sprint carry forward. Many traders need more than one attempt, and the program gives you the framework to keep improving. The guarantee covers program value, not challenge outcomes, as trading involves inherent risk.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How does the money-back guarantee work?</div>
+      <div class="faq-a">Follow the Funded Trader Sprint System™ for the full 30 days. If you genuinely feel the program has not improved your ability to approach a prop firm challenge, you receive a full refund. Simple.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Why is enrollment limited to 20 traders?</div>
+      <div class="faq-a">Quality over volume. Keeping the cohort small means you get real feedback on your trades, real support during your sprint, and a program that actually delivers results — not a course you watch and forget.</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <div class="eyebrow">About</div>
+    <div class="about-row">
+      <div class="about-avatar" style="padding:0;overflow:hidden;"><img src="data:image/jpeg;base64,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" style="width:62px;height:62px;object-fit:cover;border-radius:50%;"></div>
+      <div>
+        <div class="about-name">Hi, I'm Stio Patrick.</div>
+        <div class="about-handle">Mechanical Trader &nbsp;·&nbsp; Founder, Alpha Academy</div>
+      </div>
+    </div>
+    <div class="about-body">
+      <p>I've spent over 10 years trading derivatives markets across forex, indices, commodities and crypto — and I built the Mechanical Trader Framework to remove the guesswork from trading.</p>
+      <p>My approach is built on rule-based execution, structured risk management, and repeatable setups — the same principles professional traders rely on.</p>
+      <p>As a prop firm evaluation specialist, I've seen exactly why traders fail their challenges. And it's almost never because they can't trade. It's because they approach the challenge with no structure, no risk framework, and no daily plan. That's exactly what the Funded Trader Sprint™ was built to solve.</p>
+      <p>The Funded Trader Sprint™ is the program I wish existed when I started. Everything inside it is what I would give a trader who is serious about getting funded — and serious about doing it the right way.</p>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta-section">
+    <h2>Ready to Get Funded?</h2>
+    <p class="final-cta-sub">Stop blowing evaluations. Stop paying challenge fees with no plan. Apply for the Funded Trader Sprint™ and give yourself a real shot at your first funded account.</p>
+    <a href="file:///Users/stio/Downloads/index%20(8).html#checkout"><button class="btn-cta">Apply for the Program →</button></a>
+    <p style="font-size:13px; color:var(--text-dimmer); margin-top: 12px;">Cohort limited to 20 traders. Application required.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-copy">Funded Trader Sprint™ – Stio Patrick / Alpha Academy</span>
+    <a class="footer-link" href="file:///Users/stio/Downloads/index%20(8).html#checkout">Apply Now →</a>
+  </footer>
+
+</div>
+
+<script>
+  const toggle = document.getElementById('themeToggle');
+  if (localStorage.getItem('lp-theme') === 'light') document.body.classList.add('light');
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('light');
+    localStorage.setItem('lp-theme', document.body.classList.contains('light') ? 'light' : 'dark');
+  });
+</script>
+
+
+</body></html>
